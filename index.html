@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/meteojob.css">
-    <title>meteojob</title>
+    <link rel="stylesheet" href="meteojob.css">
+    <title>Meteojob</title>
 </head>
 <body>
-    <h1 class="signup-form-title">Créez votre profil Meteojob</h1>
-    <main id="main">
+  
+    
+    <div class="logo">
 
+        <img src="../img/logo-white.png" alt="logo" >
+    </div>        
+    <h1 class="title">Créez votre profil Meteojob</h1>
+    
+
+<main role="main" class="conteneur">
    
-    <form class="bloc" action="" method="post">
 
-                  
+
+    <form class="block" novalidate action="/candidate-signup/api/step/1">
+        
         <div class="row">
             <div class="col-sm-6 form-group">
                 <label for="firstname">Prénom</label>
@@ -49,7 +57,6 @@
             <div class="form-group">
                 <label for="email">
                     Adresse e-mail
-                    <span class="sr-only">au format xxxx@domaine.domaine</span>
                 </label>
                 <div class="input-decorator">
                     <input
@@ -120,9 +127,338 @@
                 required />
         </div>
 
+        
+        
+
+        
+        <fieldset class="form-group">
+            <legend>Types de contrats recherchés</legend>
+            <div class="signup-form-contracts-error"></div>
+            <div class="signup-form-contracts">
+            
+                
+                <div class="signup-form-contract-wrapper ">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-CDI"
+                            type="checkbox"
+                            name="contracts"
+                            value="CDI"
+                            tabindex="0"
+                            required
+                             checked 
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-CDI" tabindex="-1">CDI</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper ">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-CDD"
+                            type="checkbox"
+                            name="contracts"
+                            value="CDD"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-CDD" tabindex="-1">CDD</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper ">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-INDEPEDENT"
+                            type="checkbox"
+                            name="contracts"
+                            value="INDEPEDENT"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-INDEPEDENT" tabindex="-1">Indépendant / Franchisé</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper ">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-INTERIM"
+                            type="checkbox"
+                            name="contracts"
+                            value="INTERIM"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-INTERIM" tabindex="-1">Intérim</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper ">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-TRAINING"
+                            type="checkbox"
+                            name="contracts"
+                            value="TRAINING"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-TRAINING" tabindex="-1">Stage</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper ">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-APPRENTICE"
+                            type="checkbox"
+                            name="contracts"
+                            value="APPRENTICE"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-APPRENTICE" tabindex="-1">Alternance / Apprentissage</label>
+                    
+                    </div>
+                </div>
+            
+                <button class="btn btn-link" type="button" id="more-contracts">+ de types de contrat</button>
+                <div class="signup-form-contract-wrapper hidden">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-SEASONAL"
+                            type="checkbox"
+                            name="contracts"
+                            value="SEASONAL"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-SEASONAL" tabindex="-1">Saisonnier</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper hidden">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-INTERMIT"
+                            type="checkbox"
+                            name="contracts"
+                            value="INTERMIT"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-INTERMIT" tabindex="-1">Intermittent</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper hidden">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-CDIC"
+                            type="checkbox"
+                            name="contracts"
+                            value="CDIC"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-CDIC" tabindex="-1">CDIC</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper hidden">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-TFP"
+                            type="checkbox"
+                            name="contracts"
+                            value="TFP"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-TFP" tabindex="-1">Titulaire de la fonction publique</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper hidden">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-VIE"
+                            type="checkbox"
+                            name="contracts"
+                            value="VIE"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-VIE" tabindex="-1">VIE - VTE</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper hidden">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-MILITARY"
+                            type="checkbox"
+                            name="contracts"
+                            value="MILITARY"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-MILITARY" tabindex="-1">Militaire</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper hidden">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-CTTEE"
+                            type="checkbox"
+                            name="contracts"
+                            value="CTTEE"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-CTTEE" tabindex="-1">Contrat d&#x27;Engagement Educatif</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper hidden">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-EXTRA"
+                            type="checkbox"
+                            name="contracts"
+                            value="EXTRA"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-EXTRA" tabindex="-1">Extra</label>
+                    
+                    </div>
+                </div>
+            
+                
+                <div class="signup-form-contract-wrapper hidden">
+                    <div class="signup-form-contract inputAsALabel">
+                    
+                        <input id="contracts-VOLUNTEERING"
+                            type="checkbox"
+                            name="contracts"
+                            value="VOLUNTEERING"
+                            tabindex="0"
+                            required
+                            
+                            data-parsley-error-message="Choisissez au moins un type de contrat."
+                            data-parsley-errors-container=".signup-form-contracts-error"/>
+                        <label for="contracts-VOLUNTEERING" tabindex="-1">Bénévolat</label>
+                    
+                    </div>
+                </div>
+            
+            </div>
+        </fieldset>
+
+        
+        
+
+        
+        
+            <div class="form-group form-group-table mtop-lg">
+                <div class="form-group-table-label">
+                    <label for="accept_cgu">J'accepte les <a class="link-subtle" target="_blank" href="/conditions.mj">conditions générales</a> pour créer mon compte, bénéficier des services de matching et postuler aux offres :</label>
+                    <div data-errors-container></div>
+                </div>
+                
+
+<div class="mj-toggle inputAsALabel ">
+<input id="accept_cgu"
+       name="accept_cgu"
+       type="checkbox"
+       
+       required data-parsley-error-message="Vous devez accepter nos conditions d'utilisation pour créer votre profil."/>
+<label aria-hidden="true" tabindex="-1" for="accept_cgu">
+    <!-- Ne pas mettre a la ligne les spans -->
+    <span class="mj-toggle-yes">
+        <span>Oui</span>
+    </span><span class="mj-toggle-no">
+        <span>Non</span>
+    </span>
+    <div class="mj-toggle-mask"></div>
+</label>
+</div>
+
+            </div>
+        
+
+        
+
+        
+
+        
+
+        
+        <div class="signup-form-footer">
+            <button type="submit"
+                    class="btn btn-lg btn-primary"
+                    data-loading-text="Envoi en cours..."
+                    data-hook-remove-attr="disabled"
+                    disabled="true">
+                Continuer
+            </button>
+        </div>
     </form>
 </main>
 
-    
 </body>
 </html>
