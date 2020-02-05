@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/meteojob.css">
+    <title>meteojob</title>
+</head>
+<body>
+    <h1 class="signup-form-title">Créez votre profil Meteojob</h1>
+    <main id="main">
+
+   
+    <form class="bloc" action="" method="post">
+
+                  
+        <div class="row">
+            <div class="col-sm-6 form-group">
+                <label for="firstname">Prénom</label>
+                <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    class="form-control form-control-gray"
+                    placeholder="Votre prénom"
+                    value=""
+                    autofocus
+                    maxlength="50"
+                    required />
+            </div>
+
+            <div class="col-sm-6 form-group">
+                <label for="lastname">Nom</label>
+                <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    class="form-control form-control-gray"
+                    placeholder="Votre nom"
+                    value=""
+                    maxlength="50"
+                    required />
+            </div>
+        </div>
+
+        
+            
+            <div class="form-group">
+                <label for="email">
+                    Adresse e-mail
+                    <span class="sr-only">au format xxxx@domaine.domaine</span>
+                </label>
+                <div class="input-decorator">
+                    <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Votre adresse e-mail"
+                    data-register-email
+                    value=""
+                    
+                    required />
+                </div>
+            </div>
+        
+
+        
+
+        
+            
+            
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <div class="password-decorator">
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Choisissez votre mot de passe" required minlength="4" maxlength="15"/>
+                        <span aria-hidden="true" data-visibility-toggle class="fa fa-eye" title="Afficher / Masquer" data-toggle="tooltip"></span>
+                    </div>
+                </div>
+            
+        
+
+        
+        <div class="form-group">
+            
+                
+                    <label for="jobs">Postes recherchés</label>
+                    <input
+                        type="text"
+                        id="jobs"
+                        name="jobs"
+                        class="form-control"
+                        data-api-root="/api"
+                        data-placeholder="Un autre poste ?"
+                        data-placeholder-empty="Ex : Chef de projet, cuisinier..."
+                        data-parsley-autocomplete
+                        data-parsley-autocomplete-message="Impossible d&#x27;identifier ce métier, veuillez réessayer avec un autre métier."
+                        data-initial-value=""
+                        required />
+                
+            
+        </div>
+
+        
+        <div class="form-group signup-form-locations"
+            data-excludes="[3017382]"
+            >
+            <label for="locations">Où souhaitez-vous travailler ?</label>
+            <input
+                type="text"
+                id="locations"
+                name="locations"
+                class="form-control"
+                data-placeholder="Un autre lieu ?"
+                data-placeholder-empty="Ex : Essonne, Nantes, Bretagne..."
+                data-parsley-autocomplete
+                data-parsley-autocomplete-message="Impossible d&#x27;identifier ce lieu, veuillez réessayer avec un autre lieu."
+                data-initial-value=""
+                required />
+        </div>
+
+    </form>
+</main>
+
+    
+</body>
+</html>

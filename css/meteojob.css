@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    background-image: url(../img/picfond.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+  
+}
+#main{
+    position: relative;
+    margin: 2% auto 25%; 
+    background-color: blue;
+    height: 700px;
+    width: 550px;
+    border-radius: 5px;
+    
+}
+form
