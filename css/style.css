@@ -1,186 +1,24 @@
-
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(17, 126, 228);
-    background-image: url(../img/bg-clouds.png);
-    height: 100vh;
-    font-family: 'Open Sans',Arial, Helvetica, sans-serif;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: cornflowerblue;
 }
 
-main{
-    width: 45%;
-    margin: auto;
-}
-
-.mb-1{
-    margin-bottom: 1.2em;
-}
-
-form{
-    background-color: #ffffff;
-    padding: 3em;
-    box-sizing: border-box;
-    margin-bottom: 2em;
+/*.signup-form{
+    background-color: white;
+    height: 750px;
+    width: 450px;
     border-radius: 5px;
-}
-
-label,input{
-    display: block;
-}
-
-header{
-    margin-top: 20px;
-    text-align: center;
-}
-
-header > h2{
-    color: #ffffff;
-    font-size: 1.2em;
-    font-weight: 400;
-}
-
-
-input[type="checkbox"]{
-    display: none;
-}
-
-.group-field{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 4%;
-}
-
-.input__field > label{
-    font-size: .875rem;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #16354e;
-    margin-bottom: 4px;
-}
-
-.input__field > input{
-    width: 100%;
-    border:1px solid #bbb8b87a;
-    box-sizing: border-box;
-    padding: 10px 9px;
-}
-
-.input__field > input::placeholder{
-    font-family: var(--font-label);
-    color: #919396;
-    font-size: 1.1em;
-}
-
-
-.select__field{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-h2{
-    font-size: .875rem;
-    color: #16354e;
-}
-
-.select__field > label{
-    width: 21%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 5px;
-    font-size: .8em;
-    margin: 5px;
-    background-color: #f2f2f2;
-    color: #16354e;
-    user-select: none;
-    cursor: pointer;
-}
-
-.select__field > label:last-of-type{
-    background-color: transparent;
-    width: auto;
-}
-
-.select__field > label > span{
-
-    word-wrap: break-word;
-    text-align: center;
-}
-
-
-#deal-1:checked ~ .label-1,
-#deal-2:checked ~ .label-2,
-#deal-3:checked ~ .label-3,
-#deal-4:checked ~ .label-4,
-#deal-5:checked ~ .label-5,
-#deal-6:checked ~ .label-6{
-    background-color: #3498db;
-    color: #ffffff;
-}
-
-
-.term__field{
-    display: flex;
-}
-
-.term__field > span:first-child{
-    width: 80%;
-    color: #16354e;
-    font-family:'Open Sans',Arial, Helvetica, sans-serif;
-    font-size: .875em;
-    font-weight: 600;
-}
-
-.term__field > span > a{
-    color: #16354e;
-}
-
-.btn{
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    color: #919396;
-    overflow: hidden;
-    border: rgb(155, 155, 155) 1px solid;
-    height: 30px;
-    margin-left: 10px;
-
-}
-
-.btn label{
-    display: inline-block;
-    padding: 2px;
-    font-family: var(--font-label);
-    color: transparent;
-    margin-top: 9px;
-}
-
-#term:not(:checked) ~ .btn_no{
-    background-color: #919396;
-    color: #dfdfdf;
-    height: 34px;
-    transition: 0.8s;
+    margin: 20% 15%;
     
-
 }
-
-#term:checked ~ .btn_yes{
-    background-color: #3498db;
-    color: #dfdfdf;
-    height: 34px;
-    transition: 0.8s;
-
-}
-input[type="submit"]{
-    margin: 6px auto;
-    padding: 10px 25px;
-    color: #ffffff;
-    background-color: #3498db;
-    outline: none;
-    border: none;
-    font-size: 20px;
+*/
+.
+.mj-block{
+    background-color: white;
+    height: 750px;
+    width: 450px;
+    border-radius: 5px;
+    margin: 20% 15%;
+    display: table;
 }
