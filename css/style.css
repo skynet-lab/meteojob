@@ -22,10 +22,10 @@ main{
 
 form{
     background-color: #ffffff;
-    padding: 2em;
+    padding: 3em;
     box-sizing: border-box;
-    margin-bottom: 1em;
-    border-radius: 4px;
+    margin-bottom: 2em;
+    border-radius: 5px;
 }
 
 label,input{
@@ -56,7 +56,7 @@ input[type="checkbox"]{
 
 .input__field > label{
     font-size: .875rem;
-    font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     font-weight: bold;
     color: #16354e;
     margin-bottom: 4px;
@@ -82,8 +82,8 @@ input[type="checkbox"]{
 }
 
 h2{
-    font-size: .9em;
-    color: #272525da;
+    font-size: .875rem;
+    color: #16354e;
 }
 
 .select__field > label{
@@ -139,7 +139,7 @@ h2{
     color: #16354e;
 }
 
-.btn--switch{
+.btn{
     display: flex;
     align-items: center;
     border-radius: 4px;
@@ -148,27 +148,31 @@ h2{
     border: rgb(155, 155, 155) 1px solid;
     height: 30px;
     margin-left: 10px;
+
 }
 
-.btn--switch label{
+.btn label{
     display: inline-block;
     padding: 2px;
     font-family: var(--font-label);
     color: transparent;
+    margin-top: 9px;
 }
 
-#term:not(:checked) ~ .btn__refused{
+#term:not(:checked) ~ .btn_no{
     background-color: #919396;
     color: #dfdfdf;
-    height: 30px;
+    height: 34px;
+    transition: 0.8s;
     
 
 }
 
-#term:checked ~ .btn__accepted{
+#term:checked ~ .btn_yes{
     background-color: #3498db;
     color: #dfdfdf;
-    height: 30px;
+    height: 34px;
+    transition: 0.8s;
 
 }
 input[type="submit"]{
