@@ -184,7 +184,7 @@ input[type=submit]{
 }
 
 .col .liste0{
-  background: royalblue;
+  background: rgb(101, 177, 240);
   color: #fff;
 }
 
@@ -247,7 +247,7 @@ border: none;
 
 
 .checkbox-btn{
-  position: absolute;  
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -303,7 +303,7 @@ border: none;
   text-align: center;
   width: 60px;
   height: 100%;
-  background: #3498db;
+  background: rgb(101, 177, 240);
   font-weight: 800;
   color: rgb(255, 255, 255);
   line-height: 30px;
