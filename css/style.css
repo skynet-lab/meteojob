@@ -89,7 +89,7 @@ input[type=checkbox]{
 }
 .col label input{
   width: 100px;
-  background-color: rgb(119, 163, 243);
+  background-color: rgb(10, 72, 187);
 }
 .contrat{
   display: flex;
@@ -131,9 +131,11 @@ input[type=submit]{
 }
 .col div label{
   cursor: pointer;
+  
 }
 .col div label input[type="checkbox"]{
   display: none;
+  
 }
 .col{
   margin: 0 5px;
@@ -145,6 +147,7 @@ input[type=submit]{
   width: 800px;
 
 }
+
 .col div:nth-child(5){
 
   margin-right: 10px;
@@ -162,15 +165,13 @@ input[type=submit]{
   
   
 }
-.col div:first-child{
-  
-}
+
 .col div label span{
   position: relative;
   display: inline-block;
-  background: #ececec;
+  background: #e1e5e7;
   padding: 15px 10px;
-  color: rgb(44, 43, 43);
+  color: rgb(58, 89, 117);
   /*text-shadow: 0 1px 4px rgba(0, 0, 0, .5);*/
   font-size: 14px;
   transition: 0.4s;
@@ -180,9 +181,13 @@ input[type=submit]{
   width: 120px;
   text-align: center;
   margin-bottom: 6px;
-
-  
 }
+
+.col .liste0{
+  background: royalblue;
+  color: #fff;
+}
+
 
 
 .col-2{
