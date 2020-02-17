@@ -1,0 +1,257 @@
+body{
+    margin: 0 auto;
+	padding: 0;
+	background-image: url(https://media.meteojob.com/theme/2.3/images/bg-clouds.png
+	), linear-gradient( #1C82C9,#52A4DF,#8ECCF5);
+	font-family: "Open Sans", Arial, sans-serif;
+	color:#16354e;
+	font-weight: bold;
+}
+
+
+.entete{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.dernier{
+	background-color: white;
+	border: none;
+	font-family: "Open Sans", Arial, sans-serif;
+	color: #16354e;
+	
+}
+
+.sous-logo{
+	color: rgb(241, 235, 235);
+	font-size: 21px;
+	font-family: "Poiret One", "Open Sans", Arial, sans-serif
+	font-weight: normal;
+	line-height: 23.1px;
+	letter-spacing: normal;
+}
+
+.contenu{
+	border-radius: 5px;
+    margin: 100% auto;
+    width: 445px;
+    margin-top: 20px;
+	padding:20px;
+	padding-right: 0px;
+	background-color: white;	
+}
+
+.oeil{
+	margin-right: 4px;
+}
+
+label{
+	line-height: 30px;
+	
+}
+
+.f1{
+  width: 206.5px;
+height: 18.5px;
+}
+
+.form{
+    width: 420px;
+    height: 18px;
+}
+
+.btn{
+	padding: 15
+}
+
+.nom{
+	margin-left: 165px;
+	color: #16354e;
+}
+
+.black{
+	color: #16354e;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.bouton{
+    background-color: rgb(236, 230, 230);
+       width: 100px;
+       height: 35px;
+       font-size: 13px;
+       border: 1px solid white;
+	   margin: 2px;
+	   color: #16354e;
+}
+
+/*les flexbox*/
+.flexi{
+	display: flex;
+	justify-content: space-around;
+}
+
+.motflex{
+	display: flex;
+	justify-content: space-between;
+	width: 425px;
+	height: 23px;
+	border: 1px solid rgb(196, 184, 184);
+}
+
+.pb{
+	border: none;
+}
+
+.prémier{
+	background-color: #0f7ec5;
+	color: white;
+}
+
+.manu{
+	background-color: #0f7ec5;
+       width: 100px;
+       height: 35px;
+       font-size: 13px;
+	   border: 1px solid white; 
+	   color: white; 
+	   font-family: "Open Sans", Arial, sans-serif;
+	  margin-left: 355px;
+}
+
+#fin{
+	margin-left: -192px;
+}
+
+label{
+	font-size: 13px;
+	font-weight: bold;
+	color: rgb(66, 69, 107);
+}
+
+.conditions{
+			font-size: 14px;
+			text-align: justify;
+			margin-top: 20px;
+			margin-left: -6px;
+			font-weight: normal;
+			line-height: 20px;
+			
+			letter-spacing: normal;
+}
+
+/*Bouton on/off */
+.switch {
+		display: block;
+		padding: 0 10px 20px 0;
+		margin-right: -105px;
+		margin-top: 27px;
+}
+
+.switch h3 {
+	font-weight: normal;
+}
+
+.toggle {
+	position: absolute;
+	margin-left: -9999px;
+	visibility: hidden;
+}
+
+.toggle + label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	border-radius: 60px;
+	padding: 2px;
+	width: 145px;
+	height: 50px;
+	overflow: hidden;
+}
+
+.toggle + label:before, .toggle + label:after {
+	display: block;
+	border-radius: 60px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
+	padding: 5px;
+	color: rgb(241, 233, 233);
+}
+
+.toggle + label:before {
+	content: "off";
+	right: 1px;
+	background-color: #1ba07f;
+	text-indent: -90px;
+}
+
+.toggle + label:after {
+	content: "on";
+	text-indent: 90px;
+	width: 10px;
+	background-color: #fff;
+	margin: 1px;
+	box-shadow: 0 2px 5px rgba(000,000,000,0.2)
+}
+
+.toggle:checked + label:before {
+	background-color: #0088cc;
+	text-indent: 0;
+}
+.toggle:checked + label:after {
+	margin-left: 101px;
+	box-shadow: none;
+}
+
+/* SWITCH 3 - RIGHT LEFT
+========================== */
+input.toggle-round-right-left + label {
+	text-align: center;
+	overflow: hidden;
+	height: 30px;
+	border-radius: 0;
+}
+input.toggle-round-right-left + label:before, input.toggle-round-right-left + label:after {
+	width: 25%;
+	height: 58%;
+	padding-top: 12%;
+	color: #FFF;
+	border-radius: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 5px;
+}
+input.toggle-round-right-left + label:before {
+	content: "NON";
+	background-color: #a89f9f;
+    text-indent: inherit;
+    padding-top: 2.5px;
+}
+input.toggle-round-right-left + label:after {
+	content: "OUI";
+	background-color: #0088cc;
+	top: 0;
+	left: -101%;
+	box-shadow: none;
+    text-indent: inherit;
+    padding-top: 2px;
+}
+input.toggle-round-right-left:checked + label:before {
+	left: 5%;
+	background-color: #e7e7e7;
+}
+input.toggle-round-right-left:checked + label:after {
+	margin-left: 0;
+	left: 0;
+}
+
+/* Transition */
+.toggle + label:before, .toggle + label:after {
+	transition: All 0.5s ease;
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+}
